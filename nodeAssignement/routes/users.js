@@ -15,4 +15,9 @@ router.get('/', function(req, res, next) {
   res.send(sam);
 });
 
+/* accept POST request on the homepage */
+router.post('/post', function (req, res, next) {
+    res.render('post', {userName: req.body.name, address: req.body.address, age: req.body.age})
+});
+
 module.exports = router;
