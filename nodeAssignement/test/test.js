@@ -1,5 +1,5 @@
 var expect = require('expect');
-var math = require('./math.js');
+var math = require('./../math.js');
 
 describe('adder', function () {
     it('should add two arguments', function () {
